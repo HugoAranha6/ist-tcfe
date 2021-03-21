@@ -1,8 +1,4 @@
-OctSymPy v2.6.0: this is free software without warranty, see source.
-Initializing communication with SymPy using a popen2() pipe.
-Some output from the Python subprocess (pid 4541) might appear next.
-
-OctSymPy: Communication established.  SymPy v1.1.1.
+Symbolic pkg v2.8.0: Python communication link active, SymPy v1.5.1.
 i(t) = (symfun)
 
     d        
@@ -20,16 +16,16 @@ vi(t) = (symfun)
 
 
 
-Solution is of the formv(t) = (symfun) vo_f(t) + vo_n(t)
+Solution is of the formv(t) = (symfun) vo_f(t) + voₙ(t)
 
 
 Natural solution:
 vi(t) = (symfun) 0
 i_n(t) = (symfun)
 
-    d          
-  C⋅──(vo_n(t))
-    dt         
+    d         
+  C⋅──(voₙ(t))
+    dt        
 
 
 
@@ -40,9 +36,9 @@ i_n(t) = (symfun)
 
 ans = (sym)
 
-     t⋅wn       d              
-  A⋅ℯ     + C⋅R⋅──(vo_n(t)) = 0
-                dt             
+     t⋅wn       d             
+  A⋅ℯ     + C⋅R⋅──(voₙ(t)) = 0
+                dt            
 
 ans = (sym)
 
@@ -57,9 +53,9 @@ ans = (sym)
   C⋅R
 
 R =  1000
-C =    1.0000e-07
+C =  0.00000010000
 f =  1000
-Zc =  0.0000e+00 - 1.5915e+03i
+Zc =     0.00000 - 1591.54943i
 Cgain =  0.71696 - 0.45048i
 Gain =  0.84673
 Phase = -0.56098
